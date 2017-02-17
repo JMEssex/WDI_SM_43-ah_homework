@@ -20,6 +20,7 @@ class Tenant
     @born_on = born_on
     @gender = gender
   end
-  def full_name = @nickname ? "#{@f_name} '#{@nickname}' #{@l_name}" : "#{@f_name} #{@l_name}"
+  def full_name
+    @nickname ? "#{@f_name} '#{@nickname}' #{@l_name}" : "#{@f_name} #{@l_name}"
   end
 end
